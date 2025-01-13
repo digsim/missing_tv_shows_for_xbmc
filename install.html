@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation &mdash; Missing TV Shows for Kodi 1.3.2.dev7 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/documentation_options.js?v=cba3f428"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Usage" href="usage.html" />
+    <link rel="prev" title="Changelog" href="changes.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Missing TV Shows for Kodi
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changelog</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#from-download">From Download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#from-pip">From pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#from-sources">From Sources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#final-installation">Final installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#development-installation">Development installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clean-working-directory">Clean Working directory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#release-software">Release Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#known-problems">Known Problems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ssl-problems">SSL Problems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#proxy-problems">Proxy Problems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#uninstall">Uninstall</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#method-1-pip">Method 1 (pip)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#method-2-from-sources">Method 2 (from sources)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#method-3-from-sources">Method 3  (from sources)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#building-the-documentation-locally">Building the documentation locally</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="downloads.html">Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">adnitc contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Missing TV Shows for Kodi</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/install.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h1>
+<section id="from-download">
+<h2>From Download<a class="headerlink" href="#from-download" title="Link to this heading">¶</a></h2>
+<p>The simplest way to use <em>missingtvshows</em> is to download the packaged <em>pex</em> file from <a class="reference external" href="https://www.andreas-ruppen.ch/">mtvs</a> and put it somewhere on the path like <code class="docutils literal notranslate"><span class="pre">/usr/local/bin/``or</span> <span class="pre">``/usr/local/share/bin``or</span> <span class="pre">``~/.local/bin/</span></code> and make it executable,</p>
+<p>From this point on, the binary can be executed by calling the <em>pex</em> file directly. There exist 3 variants of the <em>pex</em> file, depending on the availalbe python version. Choose either <em>adnitc26.pex</em>, <em>adnitc27.pex</em> or <em>adnitc35.pex</em> depending on what is availalbe on your system.</p>
+<p>Download files directly from here:</p>
+<ul class="simple">
+<li><p><code class="xref download docutils literal notranslate"><span class="pre">missingtvshows_.pex</span></code> For Python &gt; 3.10</p></li>
+</ul>
+</section>
+<section id="from-pip">
+<h2>From pip<a class="headerlink" href="#from-pip" title="Link to this heading">¶</a></h2>
+<p>Simply run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pipx</span> <span class="n">install</span> <span class="n">missingTvShows</span>
+</pre></div>
+</div>
+</section>
+<section id="from-sources">
+<h2>From Sources<a class="headerlink" href="#from-sources" title="Link to this heading">¶</a></h2>
+<section id="final-installation">
+<h3>Final installation<a class="headerlink" href="#final-installation" title="Link to this heading">¶</a></h3>
+<p>From a terminal launch:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>This will compile and install the project to the pyhton libraries (eg. <code class="docutils literal notranslate"><span class="pre">/usr/local/lib/python3.12/site-packages/missingTvShows-1.2.2.dev51+gf5133b9.d20240930.dist-info</span></code>). Furthermore it will install a script in <code class="docutils literal notranslate"><span class="pre">/usr/local/bin/</span></code>:
+* missingtvshows</p>
+<p>Upon the first start a copy of a pristine application and logging configuration are created in the user’s home directory <code class="docutils literal notranslate"><span class="pre">~/.MissingTVShows/</span></code>. From this point on configuration files are read from this location. It is however possible to overwrite them either by placing a file with the same name (but prefixed with a dot eg. <code class="docutils literal notranslate"><span class="pre">.logging.conf</span></code>) in the current working directory.</p>
+</section>
+<section id="development-installation">
+<h3>Development installation<a class="headerlink" href="#development-installation" title="Link to this heading">¶</a></h3>
+<p>from a terminal launch:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">e</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>does the same as before but, uses links instead of copying files.</p>
+</section>
+<section id="clean-working-directory">
+<h3>Clean Working directory<a class="headerlink" href="#clean-working-directory" title="Link to this heading">¶</a></h3>
+<p>To clean the working directory:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">clean</span> <span class="o">--</span><span class="nb">all</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="n">build</span><span class="o">/</span> <span class="n">dist</span><span class="o">/</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="release-software">
+<h2>Release Software<a class="headerlink" href="#release-software" title="Link to this heading">¶</a></h2>
+<p>Version numbers are derived from the git history with <a class="reference external" href="https://github.com/pypa/setuptools-scm">setuptools_scm</a>: Likely <cite>python -m setuptools_scm</cite> prints the current version. It’s a mix from the version of the last git tag plus the <cite>dev</cite> suffix with a number indicating the distance to the last git tag. If the command is called on a commit with a git tag then it just takes that tag.</p>
+<p>The releasing itself is done with <a class="reference external" href="https://twine.readthedocs.io/en/latest/index.html">twine</a></p>
+<ul class="simple">
+<li><p>Build the software: <cite>python -m build</cite> (if not using <cite>tox</cite>) for creating the packages</p></li>
+<li><p>Check if everything is ready for deplyoment: <cite>python -m twine check dist/*</cite></p></li>
+<li><p>Upload artifacts: <cite>python -m twine upload –repository pypitest –verbose dist/*</cite></p></li>
+</ul>
+</section>
+<section id="known-problems">
+<h2>Known Problems<a class="headerlink" href="#known-problems" title="Link to this heading">¶</a></h2>
+<section id="ssl-problems">
+<h3>SSL Problems<a class="headerlink" href="#ssl-problems" title="Link to this heading">¶</a></h3>
+<p>Upon running the adnitc binary you might get the following exception:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITC</span> <span class="n">Password</span><span class="p">:</span>
+<span class="n">DEBUG</span> <span class="o">-</span> <span class="n">Using</span> <span class="n">Python</span> <span class="mi">2</span>
+<span class="n">DEBUG</span> <span class="o">-</span> <span class="n">Saving</span> <span class="n">calendar</span> <span class="n">to</span> <span class="n">file</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">j4</span><span class="o">/</span><span class="mi">8</span><span class="n">bm7_nb54kl2m_9kl6k5gk880000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">tmp6krkW7</span>
+<span class="n">INFO</span> <span class="o">-</span> <span class="n">Starting</span> <span class="n">new</span> <span class="n">HTTPS</span> <span class="n">connection</span> <span class="p">(</span><span class="mi">1</span><span class="p">):</span> <span class="n">example</span><span class="o">.</span><span class="n">com</span>
+<span class="n">INFO</span> <span class="o">-</span> <span class="n">Starting</span> <span class="n">new</span> <span class="n">HTTPS</span> <span class="n">connection</span> <span class="p">(</span><span class="mi">1</span><span class="p">):</span> <span class="n">example</span><span class="o">.</span><span class="n">com</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s2">&quot;/usr/local/bin/adnitc&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">9</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="n">load_entry_point</span><span class="p">(</span><span class="s1">&#39;adnitc==1.0.0&#39;</span><span class="p">,</span> <span class="s1">&#39;console_scripts&#39;</span><span class="p">,</span> <span class="s1">&#39;adnitc&#39;</span><span class="p">)()</span>
+  <span class="n">File</span> <span class="s2">&quot;/Volumes/Data/ruppena/Documents/Programming/Python/AdNITC/main/__init__.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">8</span><span class="p">,</span> <span class="ow">in</span> <span class="n">main</span>
+    <span class="n">main</span><span class="o">.</span><span class="n">getArguments</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+  <span class="n">File</span> <span class="s2">&quot;/Volumes/Data/ruppena/Documents/Programming/Python/AdNITC/main/mainImpl.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">58</span><span class="p">,</span> <span class="ow">in</span> <span class="n">getArguments</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+  <span class="n">File</span> <span class="s2">&quot;/Volumes/Data/ruppena/Documents/Programming/Python/AdNITC/main/main.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">48</span><span class="p">,</span> <span class="ow">in</span> <span class="n">main</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">doWork</span><span class="p">()</span>
+  <span class="n">File</span> <span class="s2">&quot;/Volumes/Data/ruppena/Documents/Programming/Python/AdNITC/main/mainImpl.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">76</span><span class="p">,</span> <span class="ow">in</span> <span class="n">doWork</span>
+    <span class="n">events</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchCalendarEvents</span><span class="p">()</span>
+  <span class="n">File</span> <span class="s2">&quot;/Volumes/Data/ruppena/Documents/Programming/Python/AdNITC/ITC/calendar2itc.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">33</span><span class="p">,</span> <span class="ow">in</span> <span class="n">fetchCalendarEvents</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__calendarurl</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__username</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__password</span><span class="p">),</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">proxies</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__proxies</span><span class="p">)</span>
+  <span class="n">File</span> <span class="s2">&quot;/Library/Python/2.7/site-packages/requests/api.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">70</span><span class="p">,</span> <span class="ow">in</span> <span class="n">get</span>
+    <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="s1">&#39;get&#39;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  <span class="n">File</span> <span class="s2">&quot;/Library/Python/2.7/site-packages/requests/api.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">56</span><span class="p">,</span> <span class="ow">in</span> <span class="n">request</span>
+    <span class="k">return</span> <span class="n">session</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  <span class="n">File</span> <span class="s2">&quot;/Library/Python/2.7/site-packages/requests/sessions.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">475</span><span class="p">,</span> <span class="ow">in</span> <span class="n">request</span>
+    <span class="n">resp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">prep</span><span class="p">,</span> <span class="o">**</span><span class="n">send_kwargs</span><span class="p">)</span>
+  <span class="n">File</span> <span class="s2">&quot;/Library/Python/2.7/site-packages/requests/sessions.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">596</span><span class="p">,</span> <span class="ow">in</span> <span class="n">send</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  <span class="n">File</span> <span class="s2">&quot;/Library/Python/2.7/site-packages/requests/adapters.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">497</span><span class="p">,</span> <span class="ow">in</span> <span class="n">send</span>
+    <span class="k">raise</span> <span class="n">SSLError</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">request</span><span class="o">=</span><span class="n">request</span><span class="p">)</span>
+<span class="n">requests</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">SSLError</span><span class="p">:</span> <span class="p">[</span><span class="n">SSL</span><span class="p">:</span> <span class="n">SSLV3_ALERT_HANDSHAKE_FAILURE</span><span class="p">]</span> <span class="n">sslv3</span> <span class="n">alert</span> <span class="n">handshake</span> <span class="n">failure</span> <span class="p">(</span><span class="n">_ssl</span><span class="o">.</span><span class="n">c</span><span class="p">:</span><span class="mi">590</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This simply means that some OpenSSL libraries are too old. Start by upgrading:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="o">-</span><span class="n">H</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pyOpenSSL</span>
+<span class="n">sudo</span> <span class="o">-</span><span class="n">H</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">ndg</span><span class="o">-</span><span class="n">httpsclient</span>
+</pre></div>
+</div>
+<p>if that is not enough also update the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="o">-</span><span class="n">H</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pyasn1</span>
+</pre></div>
+</div>
+</section>
+<section id="proxy-problems">
+<h3>Proxy Problems<a class="headerlink" href="#proxy-problems" title="Link to this heading">¶</a></h3>
+<p>Installation from sources may fail behind a proxy. Thus install the requirements by hand and specify the proxy:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="o">-</span><span class="n">H</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">proxy</span><span class="o">=</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">my</span><span class="o">.</span><span class="n">proxy</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="mi">1234</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="uninstall">
+<h2>Uninstall<a class="headerlink" href="#uninstall" title="Link to this heading">¶</a></h2>
+<section id="method-1-pip">
+<h3>Method 1 (pip)<a class="headerlink" href="#method-1-pip" title="Link to this heading">¶</a></h3>
+<p>If the package was installed with <code class="docutils literal notranslate"><span class="pre">pip</span></code> simply run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">uninstall</span> <span class="n">adnitc</span>
+</pre></div>
+</div>
+</section>
+<section id="method-2-from-sources">
+<h3>Method 2 (from sources)<a class="headerlink" href="#method-2-from-sources" title="Link to this heading">¶</a></h3>
+<p>If the packages was installed from sources:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="n">files</span><span class="o">.</span><span class="n">txt</span> <span class="o">|</span><span class="n">sudo</span> <span class="n">xargs</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span>
+</pre></div>
+</div>
+</section>
+<section id="method-3-from-sources">
+<h3>Method 3  (from sources)<a class="headerlink" href="#method-3-from-sources" title="Link to this heading">¶</a></h3>
+<p>First find the installed package with pip and the uninstall it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>✔ ~/Documents/Programming/Python/AdNITC [master|✚ 1]
+19:02 $ pip3 freeze |grep adnitc
+adnitc==1.1
+
+✔ ~/Documents/Programming/Python/AdNITC [master|✚ 1]
+19:02 $  pip3 uninstall adnitc
+Uninstalling adnitc-1.1:
+  /usr/local/bin/adnitc
+  /usr/local/lib/python3.5/site-packages/adnitc-1.1.dist-info/DESCRIPTION.rst
+  /usr/local/lib/python3.5/site-packages/adnitc-1.1.dist-info/INSTALLER
+  /usr/local/lib/python3.5/site-packages/adnitc-1.1.dist-info/METADATA
+  /usr/local/lib/python3.5/site-packages/adnitc-1.1.dist-info/RECORD
+  /usr/local/lib/python3.5/site-packages/adnitc-1.1.dist-info/WHEEL
+  /usr/local/lib/python3.5/site-packages/adnitc-1.1.dist-info/entry_points.txt
+  /usr/local/lib/python3.5/site-packages/adnitc-1.1.dist-info/metadata.json
+  /usr/local/lib/python3.5/site-packages/adnitc-1.1.dist-info/top_level.txt
+  /usr/local/lib/python3.5/site-packages/adnitc/__init__.py
+  /usr/local/lib/python3.5/site-packages/adnitc/__pycache__/__init__.cpython-35.pyc
+  /usr/local/lib/python3.5/site-packages/adnitc/etc/adnitc-completion.bash
+  /usr/local/lib/python3.5/site-packages/adnitc/etc/adnitc.conf
+  /usr/local/lib/python3.5/site-packages/adnitc/etc/logging.conf
+  /usr/local/lib/python3.5/site-packages/adnitc/itc/__init__.py
+  /usr/local/lib/python3.5/site-packages/adnitc/itc/__pycache__/__init__.cpython-35.pyc
+  /usr/local/lib/python3.5/site-packages/adnitc/itc/__pycache__/calendar2itc.cpython-35.pyc
+  /usr/local/lib/python3.5/site-packages/adnitc/itc/__pycache__/calendarEvent.cpython-35.pyc
+  /usr/local/lib/python3.5/site-packages/adnitc/itc/__pycache__/itcClient.cpython-35.pyc
+  /usr/local/lib/python3.5/site-packages/adnitc/itc/calendar2itc.py
+  /usr/local/lib/python3.5/site-packages/adnitc/itc/calendarEvent.py
+  /usr/local/lib/python3.5/site-packages/adnitc/itc/itcClient.py
+  /usr/local/lib/python3.5/site-packages/adnitc/main/__init__.py
+  /usr/local/lib/python3.5/site-packages/adnitc/main/__pycache__/__init__.cpython-35.pyc
+  /usr/local/lib/python3.5/site-packages/adnitc/main/__pycache__/main.cpython-35.pyc
+  /usr/local/lib/python3.5/site-packages/adnitc/main/__pycache__/mainImpl.cpython-35.pyc
+  /usr/local/lib/python3.5/site-packages/adnitc/main/main.py
+  /usr/local/lib/python3.5/site-packages/adnitc/main/mainImpl.py
+Proceed (y/n)? y
+  Successfully uninstalled adnitc-1.1
+</pre></div>
+</div>
+<p>To install the adnitc package, use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+</pre></div>
+</div>
+<p>If installation is successful, you will be able to import the iCalendar
+package, like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">icalendar</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="building-the-documentation-locally">
+<h2>Building the documentation locally<a class="headerlink" href="#building-the-documentation-locally" title="Link to this heading">¶</a></h2>
+<p>To build the documentation follow these steps:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>http://digsim.is-a-geek.com/rhode/AdNITC
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>adnitc
+$<span class="w"> </span>virtualenv-2.7<span class="w"> </span>.
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>bin/activate
+$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements_docs.txt<span class="w"> </span>--extra-index-url<span class="w"> </span>http://pypi.is-a-geek.com/simple<span class="w"> </span>--trusted-host<span class="w"> </span>pypi.is-a-geek.com
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>docs
+$<span class="w"> </span>make<span class="w"> </span>html
+</pre></div>
+</div>
+<p>You can now open the output from <code class="docutils literal notranslate"><span class="pre">_build/html/index.html</span></code>. To build the
+presentation-version use <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">presentation</span></code> instead of <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code>. You
+can open the presentation at <code class="docutils literal notranslate"><span class="pre">presentation/index.html</span></code>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="changes.html" class="btn btn-neutral float-left" title="Changelog" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="usage.html" class="btn btn-neutral float-right" title="Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Andreas Ruppen.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
